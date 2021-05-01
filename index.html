@@ -17,6 +17,8 @@
 
   <div class="scoreboard">
   	<div class="scorecard score">0</div>
+  	<button class="button" onClick="startGame()"></button>
+  	<button class="button close" onClick="closeModal()"></button>
   </div>
 
   <div class="game">
@@ -93,6 +95,7 @@ moles.forEach(mole => mole.addEventListener("click", bunk));
 
 function startGame() {
 	document.body.style.cursor = "url('hammer-hit.png'), auto";
+	document.querySelector('.scoreboard').classList.remove("scoreboard-modal");	
 	scoreBoard.textContent = 0;
 	score = 0;
 	timeUp = false;
@@ -103,11 +106,15 @@ function startGame() {
 	setTimeout(() => {
 		timeUp = true;
 			setTimeout(() => {
-			document.querySelector('.button').style.backgroundImage="url(button-2.png)";
+			document.querySelector('.scoreboard').classList.add("scoreboard-modal");
 		}, 1000);
 	}, 10000);
-
 }
+
+function closeModal(){
+	document.querySelector('.scoreboard').classList.remove("scoreboard-modal");
+}
+
 </script>
 </body>
 </html>

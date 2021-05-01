@@ -115,13 +115,27 @@ button:focus {
 
 
 .scoreboard{
-	position: absolute;right: 120px;
-	top: 50px;
-	height: 332px;
+	position: absolute;
+	right: 120px;
+	top: 100px;
+	left: auto;
+	bottom: auto;
 	width: 420px;
-	background: url(score.png) no-repeat;
-	background-size: 420px 332px;
+	height: 282px;
+	background: #E4D4CE url(score.png) no-repeat;
+	background-size: 420px 282px;
+    /*transition: all 0.4s ease-out;*/
+    box-shadow: none;
+}
 
+.scoreboard-modal{
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: -100px;
+    bottom: 0px;
+    box-shadow: 0px 0px 0px 1000px rgb(255 255 255 / 80%);
+    z-index: 10;
 }
 
 .scorecard{
@@ -138,24 +152,28 @@ button:focus {
     font-weight: bold;
     padding: 20px 0px;
     color: #571B09;
-    transition: all 0.1s ease-out;
 }
 
-.scoreboard-modal{
-	right: 0;
-    left: 0;
-    margin: auto;
-    top: -100px;
-    bottom: 0px;
-}
-
-.scoreboard-modal:before{
-	display: block;
-	content: '';
+.scoreboard .button{
+	opacity: 0;
+	background: url('button-2.png');
+	background-size: cover;
 	position: absolute;
+	width: 315px;
 	left: 0;
 	right: 0;
-	top: 0;
-	bottom: 0;
-	background: rgba(255,255,255,0.6);
+	bottom: -100px;
+	/*transition: all 0.6s ease-out;*/
+}
+
+.scoreboard .close{
+	background: url(close.png);
+	background-size: cover;
+	width: 80px;
+	right: 0px;
+	left: auto;
+}
+
+.scoreboard-modal .button{
+	opacity: 1;
 }
