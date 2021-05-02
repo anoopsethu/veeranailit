@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nail it Veera | Courage Test aka Veera's Test</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,37 +11,43 @@
   <!-- <h1 style="display: none;">Whack-a-mole! <span class="score">0</span></h1> -->
   <!--  -->
 
-  <div class="intro">
-  	<img src="title-2.png" class="header">
-  	<button class="button" onClick="startGame()"></button>
-  </div>
+	<div class="web">  
+		<div class="intro">
+			<img src="title-2.png" class="header">
+			<button class="button" onClick="startGame()"></button>
+		</div>
 
-  <div class="scoreboard">
-  	<div class="scorecard score">0</div>
-  	<button class="button" onClick="startGame()"></button>
-  	<button class="button close" onClick="closeModal()"></button>
-  </div>
+		<div class="scoreboard">
+			<div class="scorecard score">0</div>
+			<button class="button" onClick="startGame()"></button>
+			<button class="button close" onClick="closeModal()"></button>
+		</div>
 
-  <div class="game">
-    <div class="hole hole1">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole2">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole3">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole4">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole5">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole6">
-      <div class="mole"></div>
-    </div>
-  </div>
+		<div class="game">
+			<div class="hole hole1">
+			  <div class="mole"></div>
+			</div>
+			<div class="hole hole2">
+			  <div class="mole"></div>
+			</div>
+			<div class="hole hole3">
+			  <div class="mole"></div>
+			</div>
+			<div class="hole hole4">
+			  <div class="mole"></div>
+			</div>
+			<div class="hole hole5">
+			  <div class="mole"></div>
+			</div>
+			<div class="hole hole6">
+			  <div class="mole"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mob">
+		<img src="mob-message.png">
+	</div>
 
 <script>
 const holes = document.querySelectorAll(".hole");
