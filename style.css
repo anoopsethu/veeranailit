@@ -210,4 +210,46 @@ button:focus {
 	.web{
 		display: none;
 	}
+	.game{
+	    width: 81vw;
+	    height: 52vh;
+	    margin: 0 40px;
+	}
+	.button{
+	    height: 56px;
+	    width: 230px;
+	}
+	.intro .header {
+	    height: auto;
+    	width: 80vw;
+	}
+	.intro {
+    	padding: 40px 40px;
+    	text-align: center;
+	}
+	.scoreboard {
+	    background: none;
+	    position: static;
+	    width: auto;
+	    height: auto;
+	}
+	.scoreboard .button{
+		display: none;
+	}
+	.score{
+		position: static;
+	    width: auto;
+	    height: auto;
+        padding: 5px;
+	    font-size: 28px;
+    	margin-top: -15px;
+    	border-radius: 0px;
+	}
+	.hole:after {
+	    height: 21px;
+	}
+	.mole, .mole-hit{
+		background-size: 62px !important;
+	}
+
 }
